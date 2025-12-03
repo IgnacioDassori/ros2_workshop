@@ -11,7 +11,8 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name, [
-            'launch/conversation_launch.py'
+            'launch/conversation_launch.py',
+            'launch/turtlebot_launch.py'
         ]),
     ],
     install_requires=['setuptools'],
@@ -24,7 +25,9 @@ setup(
     entry_points={
         'console_scripts': [
             'talker = python_package.talker:main',
-            'listener = python_package.listener:main'
+            'listener = python_package.listener:main',
+            'service = python_package.service:main',
+            'client = python_package.client:main' 
         ],
     },
 )

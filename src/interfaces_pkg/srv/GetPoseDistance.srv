@@ -1,0 +1,4 @@
+nav_msgs/Odometry base_odom
+Pose3D target_pose
+---
+float64 dist
